@@ -27,5 +27,4 @@ public class StickySummaryDecoration extends RecyclerView.ItemDecoration {
 			summaryView.setVisibility(View.GONE);
 		}
 	}
-
 }
