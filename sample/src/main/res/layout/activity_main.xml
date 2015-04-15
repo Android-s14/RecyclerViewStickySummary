@@ -1,0 +1,25 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:tools="http://schemas.android.com/tools"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent"
+              android:gravity="center"
+              android:orientation="vertical"
+              tools:context="com.android_s14.rvsummary.sample.MainActivity"
+    >
+
+    <Button
+        android:id="@+id/button_short_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Short list"
+        />
+
+    <Button
+        android:id="@+id/button_long_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Long list"
+        />
+
+
+</LinearLayout>
