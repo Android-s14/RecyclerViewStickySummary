@@ -12,7 +12,10 @@ public class StickySummaryDecoration extends RecyclerView.ItemDecoration {
 		int childCount = parent.getAdapter().getItemCount();
 		int lastVisibleItemPosition =
 				((LinearLayoutManager) parent.getLayoutManager()).findLastVisibleItemPosition();
-		if (lastVisibleItemPosition == (childCount - 1)) {
+		int firstVisiblePosition =
+				((LinearLayoutManager) parent.getLayoutManager())
+						.findFirstCompletelyVisibleItemPosition();
+		if ((firstVisiblePosition == 0) && (lastVisibleItemPosition == (childCount - 1))) {
 			View summaryView = parent.getChildAt(parent.getChildCount() - 1);
 			int topOffset = parent.getHeight() - summaryView.getHeight();
 			int leftOffset =
